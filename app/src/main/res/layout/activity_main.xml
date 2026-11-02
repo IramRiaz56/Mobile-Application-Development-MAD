@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity = "center_horizontal"
+    android:padding = "10dp" >
+
+
+        <TextView
+            android:id ="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="18sp"
+            android:textColor = "#000000"
+            android:gravity="center"  />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="Profile image"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            />
+        <Button
+           android:id="@+id/btnSubmit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Submit"
+           android:onClick="onSubmitClick"
+            android:enabled="true"
+           android:layout_margin="10dp"
+           android:backgroundTint="#2196F3" />
+
+        <CheckBox
+            android:id="@+id/checkAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Agree"
+            android:checked="false"
+            android:buttonTint="#2196F3" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <RadioButton
+               android:id="@+id/radioMale"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+               android:buttonTint="#FF5722"
+               android:checked="true"
+               android:text="Male"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+               android:id="@+id/radioFemale"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Female" />
+
+
+        <ToggleButton
+            android:id="@+id/toggleWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="ON"
+            android:checked="false"
+            android:backgroundTint="#4CAF50"/>
+        <Switch
+            android:id="@+id/switchBlueTooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:orientation="vertical"
+            android:text="Bluetooth"
+            android:thumbTint="#FFFFFF"
+            android:trackTint="#4CAF50"
+            tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+        <ProgressBar
+            android:id = "@+id/progressLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate = "true"   />
+        <ProgressBar
+            android:id = "@+id/progressDownload"
+            style = "?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max = "100"
+            android:progress = "40" />
+
+        <Spinner
+            android:id="@+id/spinnerCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:padding="8dp" />
+
+        <ListView
+            android:id="@+id/listNames"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"
+            android:padding="8dp" />
+</LinearLayout>
+
+
+
